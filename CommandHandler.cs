@@ -137,11 +137,6 @@ public static class CommandHandler
 
     public static async Task LaunchFreelancer(bool server)
     {
-        if (!server)
-        {
-            return;
-        }
-        
         var config = Config.Instance;
         var freelancerPath = Path.Combine(config.DestinationFreelancerPath, "EXE");
         var freelancerExePath = Path.Combine(freelancerPath, "Freelancer.exe");
